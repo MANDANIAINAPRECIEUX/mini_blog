@@ -1,0 +1,20 @@
+<div class="form-container">
+  <form action="/images/create" method="post" enctype="multipart/form-data">
+    <label for="title">Titre :</label>
+    <input type="text" id="title" name="title" required>
+
+    <label>Choisir une image locale :</label>
+    <input type="file" id="file" name="file">
+
+    <label>Ou mettre une URL d'image :</label>
+    <input type="text" id="url" name="url" placeholder="https://...">
+
+    <label for="description">Description :</label>
+<textarea id="description" name="description" rows="2" placeholder="Écrivez une petite description..."></textarea>
+
+
+    <button type="submit" class="btn-primary">Ajouter l'image</button>
+  </form>
+
+  <p><a href="/images" class="btn-link">← Retour aux images</a></p>
+</div>

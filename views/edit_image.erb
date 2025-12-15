@@ -1,0 +1,21 @@
+<h1>Modifier l'image</h1>
+
+<div class="form-container">
+  <form action="/images/update/<%= @image["id"] %>" method="post">
+    <input type="hidden" name="_method" value="post">
+
+    <label for="title">Titre :</label>
+    <input type="text" id="title" name="title" value="<%= @image["title"] %>" required>
+
+    <label for="url">URL de l'image :</label>
+    <input type="text" id="url" name="url" value="<%= @image["url"] %>" required>
+
+    <label for="description">Description :</label>
+<textarea id="description" name="description" rows="2"><%= @image["description"] %></textarea>
+
+
+    <button type="submit" class="btn-primary">Mettre à jour</button>
+  </form>
+
+  <p><a href="/images" class="btn-link">← Retour aux images</a></p>
+</div>

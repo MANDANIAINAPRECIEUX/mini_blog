@@ -1,0 +1,17 @@
+
+
+<div class="form-container">
+  <form action="/update/<%= @article["id"] %>" method="post">
+    <input type="hidden" name="_method" value="post">
+
+    <label for="title">Titre :</label>
+    <input type="text" id="title" name="title" value="<%= @article["title"] %>" required>
+
+    <label for="content">Contenu :</label>
+    <textarea id="content" name="content" rows="8" required><%= @article["content"] %></textarea>
+
+    <button type="submit" class="btn-primary">Mettre à jour</button>
+  </form>
+
+  <p><a href="/articles" class="btn-link">← Retour aux articles</a></p>
+</div>

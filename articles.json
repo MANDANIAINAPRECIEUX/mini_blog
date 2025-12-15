@@ -1,0 +1,14 @@
+[
+  {
+    "id": "361f9a8f-0153-4bed-a183-775555c9f9c2",
+    "title": "🌱 Mon apprentissage de Ruby",
+    "content": "J’ai commencé à apprendre Ruby par curiosité, avec l’envie de mieux comprendre comment fonctionnent les applications web côté serveur. Dès les premières lignes de code, j’ai apprécié la simplicité et la lisibilité du langage. Ruby m’a permis de me concentrer sur la logique plutôt que sur la complexité de la syntaxe.\r\n\r\nAu fil de mon apprentissage, j’ai découvert les bases essentielles :\r\nles variables, les conditions, les boucles, les méthodes et la manipulation des données. Chaque petite fonctionnalité réalisée me donne plus de confiance et m’encourage à aller plus loin.\r\n\r\nAujourd’hui, j’utilise Ruby pour créer de petits projets comme ce mini blog. Cela me permet de pratiquer concrètement, de faire des erreurs, de les corriger et surtout de progresser étape par étape. Je ne cherche pas la perfection, mais une évolution constante.\r\n\r\nCe blog est aussi un moyen de garder une trace de mon parcours, de mes réussites comme de mes difficultés, et de partager ce que j’apprends au quotidien. L’apprentissage du développement est un long chemin, et Ruby est l’un des outils qui m’aide à avancer avec plaisir et motivation 🚀",
+    "date": "14/12/2025"
+  },
+  {
+    "id": "baf7d527-551a-4a71-908c-a143a2c98047",
+    "title": "🚀 De JavaScript à Ruby",
+    "content": "Avant de me lancer dans Ruby, j’avais déjà une première expérience avec JavaScript. Cela m’a beaucoup aidé à comprendre plus rapidement certains concepts comme les variables, les conditions, les boucles et la logique générale de programmation 🧠.\r\n\r\nGrâce à JavaScript, je n’ai pas commencé de zéro. J’avais déjà l’habitude de réfléchir en termes de logique et de structure, ce qui a rendu la découverte de Ruby plus fluide. Même si les deux langages sont différents, beaucoup de principes restent les mêmes, et cela m’a donné confiance dès le début 💪.\r\n\r\nPasser de JavaScript à Ruby m’a aussi permis de voir d’autres façons de coder, plus lisibles et plus expressives. Ruby m’a appris à écrire du code plus clair et plus naturel, tout en gardant une logique solide.\r\n\r\nAujourd’hui, cette combinaison de JavaScript et Ruby m’aide à mieux comprendre le développement web dans son ensemble 🌐. J’avance progressivement, en consolidant mes bases et en construisant des projets concrets pour continuer à apprendre et progresser 📈.",
+    "date": "14/12/2025"
+  }
+]

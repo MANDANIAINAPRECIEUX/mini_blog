@@ -1,0 +1,15 @@
+
+
+<% @articles.each do |a| %>
+  <div class="article-card">
+    <h2><%= a["title"] %></h2>
+    <small>Publié le <%= a["date"] %></small>
+    <p><%= a["content"] %></p>
+    <p>
+      <a href="/edit/<%= a["id"] %>">Modifier</a> |
+      <a href="/delete/<%= a["id"] %>" onclick="return confirm('Voulez-vous vraiment supprimer cet article ?')">Supprimer</a>
+    </p>
+  </div>
+<% end %>
+
+<p><a href="/new" class="btn-primary">+ Ajouter un article</a></p>

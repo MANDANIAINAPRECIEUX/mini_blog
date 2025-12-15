@@ -1,0 +1,13 @@
+<h1>Ajouter un nouvel article</h1>
+
+<form action="/create" method="post">
+  <label for="title">Titre :</label><br>
+  <input type="text" id="title" name="title" required style="width:100%; padding:8px; margin-bottom:10px;"><br>
+
+  <label for="content">Contenu :</label><br>
+  <textarea id="content" name="content" rows="6" required style="width:100%; padding:8px; margin-bottom:10px;"></textarea><br>
+
+  <button type="submit" style="background-color:#00AFC3; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">Ajouter l'article</button>
+</form>
+
+<p><a href="/articles">← Retour aux articles</a></p>

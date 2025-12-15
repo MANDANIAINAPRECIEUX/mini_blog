@@ -1,0 +1,29 @@
+<h1>Mes images</h1>
+
+
+<% if @images.empty? %>
+  <p>Aucune image pour le moment.</p>
+<% else %>
+  <% @images.each do |i| %>
+   <div class="image-card">
+  <div class="image-preview">
+    <img src="<%= i["url"] %>" alt="<%= i["title"] %>">
+  </div>
+
+  <div class="image-info">
+    <h2><%= i["title"] %></h2>
+    <p class="desc"><%= i["description"] || "Aucune description." %></p>
+    <small>📅 <%= i["date"] %> </small>
+
+    <p class="farany" >
+      <a href="/images/edit/<%= i["id"] %>">Modifier</a> |
+      <a href="/images/delete/<%= i["id"] %>" onclick="return confirm('Supprimer cette image ?')">Supprimer</a>
+    </p>
+  </div>
+</div>
+
+  <% end %>
+<% end %>
+
+
+<p><a href="/images/new" class="btn-primary">+ Ajouter une image</a></p>

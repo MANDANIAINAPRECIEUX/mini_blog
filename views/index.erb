@@ -1,0 +1,99 @@
+
+<style>
+  /* Règles pour le titre animé */
+  #titre {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15vh;
+    font-weight: 800;
+
+    /* image servie depuis public/uploads -> chemin public: /uploads/nom.jpg */
+    background: url('/uploads/violet.jpg') center / 300% no-repeat;
+
+    /* clipper le background sur le texte */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* standard fallback */
+    background-clip: text;
+    color: transparent;
+
+    /* animation du background-position */
+    animation: bgMove 12s linear infinite;
+  }
+
+  /* animation : on déplace la position x du background */
+  @keyframes bgMove {
+    0%   { background-position:   0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position:   0% 50%; }
+  }
+</style>
+
+<h1 id="titre">Qui suis-je ?</h1>
+
+
+<p>Bienvenue sur mon mini blog sur le développement web, Ruby, JavaScript et mes projets!</p>
+<br>
+  Je suis 
+  <span style="font-family: 'RubikBubbles-Regular'; font-size: 2vh;">
+    BLOG-KO
+  </span>
+  et j’écris ici mes pensées, mes projets et mes vidéos.</br>
+  
+</p>
+
+<p>
+Sur ce blog, vous trouverez :</p>
+<ul class="custom-list">
+  <li>Des articles sur mes expériences et apprentissages</li>
+  <li>Des images et créations personnelles</li>
+  <li>Des conseils et astuces pour les passionnés de technologie</li>
+</ul>
+
+
+<div class="tech-icons">
+  <div class="tech-card">
+    <img src="/icons/Ruby.png" alt="Langage Ruby">
+    <h3>Ruby</h3>
+    <p class="tech-desc">
+      Un langage élégant et lisible, idéal pour créer rapidement des applications web
+      avec une syntaxe simple et expressive.
+    </p>
+  </div>
+
+  <div class="tech-card">
+    <img src="/icons/javascript.png" alt="Langage JavaScript">
+    <h3>JavaScript</h3>
+    <p class="tech-desc">
+      Le langage du web interactif, utilisé pour dynamiser les interfaces et créer
+      des expériences utilisateur modernes.
+    </p>
+  </div>
+  <div class="tech-card">
+    <img src="/icons/python.png" alt="Langage python">
+    <h3>Python</h3>
+    <p class="tech-desc">
+      Python est un langage polyvalent utilisé pour le web, la data science, et l'automatisation. Facile à apprendre et très populaire.
+    </p>
+  </div>
+  <div class="tech-card">
+    <img src="/icons/Sinatra_logo.png" alt="Langage Sinatra">
+    <h3>Sinatra</h3>
+    <p class="tech-desc">
+      Sinatra est un micro-framework Ruby pour créer rapidement des sites web ou APIs légères. Idéal pour les petits projets et l’apprentissage.
+    </p>
+  </div>
+  
+</div>
+<div class="cta-links" style="text-align:center; margin-bottom:40px; padding-top:60px">
+  <a href="/articles" class="btn-primary">Voir mes articles 📖</a>
+  <a href="/images" class="btn-primary" style="margin-left:15px;">Voir mes images 🖼️</a>
+</div>
+
+<p style="text-align:center; color:#555; margin-bottom:20px;">
+  Merci de visiter mon blog ! Suivez mes aventures dans le développement web et mes créations.
+</p>
+
+
+
+

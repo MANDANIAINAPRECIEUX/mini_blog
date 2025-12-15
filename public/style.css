@@ -1,0 +1,380 @@
+/* 🌟 Reset basique */
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%; /* nécessaire pour que flex fonctionne sur toute la hauteur */
+  margin: 0;
+}
+
+.page-layout {
+  min-height: 100vh; /* page au moins de la hauteur de l'écran */
+  display: flex;
+  flex-direction: column; /* header / main / footer en colonne */
+}
+
+.content {
+  flex: 1; /* prend tout l’espace disponible */
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fc;
+  color: #1b263b;
+  line-height: 1.6;
+}
+
+/* 🟢 En-tête */
+header {
+  background-color: #1b263b;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+header nav a {
+  color: #00afc3;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+/* pousse les liens à droite */
+.nav-links {
+  margin-left: auto;
+  display: flex;
+  gap: 50px;
+}
+
+header nav a:hover {
+  color: #ff7f50;
+  transform: scale(1.05);
+}
+
+/* 🟢 Contenu principal */
+main {
+  max-width: 900px;
+  width: 90%;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+/* 🟢 Titres */
+h1,
+h2,
+h3 {
+  color: #1b263b;
+  margin-bottom: 15px;
+}
+
+/* 🟢 Paragraphes */
+p {
+  margin-bottom: 15px;
+}
+
+/* 🟢 Liens */
+a {
+  color: #00afc3;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ff7f50;
+}
+
+/* 🟢 Liste d’articles (cartes) */
+.article-card {
+  width: 100%;
+  background-color: #ffffff;
+
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.article-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* 🟢 Footer  */
+.site-footer {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 🟢 Formulaire moderne */
+.form-container {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.form-container input[type="text"],
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+
+.form-container input[type="text"]:focus,
+.form-container textarea:focus {
+  border-color: #00afc3;
+  outline: none;
+}
+
+/* Bouton primaire */
+.btn-primary {
+  background-color: #00afc3;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 25px;
+}
+
+.btn-primary:hover {
+  background-color: #0090a0;
+  transform: translateY(-2px);
+}
+
+/* Lien retour */
+.btn-link {
+  color: #00afc3;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.btn-link:hover {
+  color: #ff7f50;
+}
+
+/* Conteneur du formulaire */
+.form-container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Espacement vertical entre les champs */
+.form-container label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-container input[type="text"],
+.form-container input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/* Bouton principal */
+.form-container .btn-primary {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #00afc3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.form-container .btn-primary:hover {
+  background-color: #008aa0;
+}
+
+/* Lien retour */
+.form-container .btn-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #00afc3;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.form-container .btn-link:hover {
+  color: #008aa0;
+}
+
+/* Style spécifique pour input file */
+.form-container input[type="file"] {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.image-card {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background: white;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  align-items: flex-start;
+}
+
+.image-preview img {
+  max-width: 200px;
+  border-radius: 8px;
+}
+
+.image-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-info h2 {
+  margin: 0;
+}
+.image-info p:last-child {
+  margin-top: 10px; /* pousse ce p vers le bas */
+}
+
+.desc {
+  margin: 10px 0;
+  color: #444;
+  font-size: 14px;
+}
+
+.gradient-title {
+  font-size: 4rem;
+  font-weight: 700;
+  /* dégradé linéaire : tu peux changer l'angle (90deg, 180deg, etc.) */
+  background: linear-gradient(90deg, var(--blue), var(--brown), var(--red));
+  -webkit-background-clip: text; /* pour Chrome, Safari, Edge */
+  background-clip: text; /* standard (certains navigateurs) */
+  -webkit-text-fill-color: transparent; /* rend le texte transparent pour laisser voir le background */
+  color: transparent; /* fallback */
+}
+
+@font-face {
+  font-family: "Pacifico-Regular";
+  src: url("/fonts/Pacifico-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "RubikBubbles-Regular";
+  src: url("/fonts/RubikBubbles-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+header nav .logo {
+  color: #ffffff !important;
+  font-family: "RubikBubbles-Regular";
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin-right: 30px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.custom-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.custom-list li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+  color: #1b263b;
+}
+
+/* puce personnalisée */
+.custom-list li::before {
+  content: "●";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #8b7cf6; /* violet */
+}
+
+.tech-icons {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.tech-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  width: 160px;
+  text-align: center;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tech-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+.tech-card img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+.tech-card p {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #1b263b;
+}
