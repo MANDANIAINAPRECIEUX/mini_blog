@@ -1,0 +1,9 @@
+1 - ERREUR: Your bundle only supports platforms ["x64-mingw-ucrt"]
+                but your local platform is x86_64-linux
+
+                Add the current platform to the lockfile with:
+
+                bundle lock --add-platform x86_64-linux
+                
+    EXPLICATION: render fonctionne sous linux et Gemfile a été créer pour windows
+    solution: bundle lock --add-platform x86_64-linux
