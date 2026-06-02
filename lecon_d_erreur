@@ -8,4 +8,4 @@
     EXPLICATION: render fonctionne sous linux et Gemfile a été créer pour windows
     solution: bundle lock --add-platform x86_64-linux
 
-    suivant la configuration que l'on
+    suivant la configuration que
